@@ -1,0 +1,10 @@
+runtime: python39
+
+handlers:
+- url: /static
+  static_files: static
+  upload: static
+
+env_variables:
+    GCLOUD_PROJECT: "personalsite-305119"
+    GOOGLE_APPLICATION_CREDENTIALS: "personalsite-a6e3a2e14e45.json"

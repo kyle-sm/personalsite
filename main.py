@@ -74,3 +74,7 @@ def get_recent() -> list:
         postdata['content'] = Markup(postdata['content']).striptags()[:100]
         posts.append(postdata)
     return posts
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
