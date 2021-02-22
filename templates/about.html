@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<p><a href="https://github.com/kyle-sm">Github</a></p>
+<p><a href="https://www.linkedin.com/in/steven-kyle-7a7b0b1b2/">LinkedIn</a></p>
+<p><a href="{{ url_for('static', filename='resume.pdf') }}">Resume</a></p>
+<p>My name is Steven Kyle. I'm a Miami University graduate who has always had
+an interest in technology, and I've been fortunate enough to turn a childhood
+curiosity into a useful career. </p>
+<p>I find as I browse the internet that a lot of developers have their own
+websites, in which they share their learning experiences with the world. I've
+found these to be useful resources, and so this is my contribution to that
+pool. Hopefully, it can help someone learn, or, at the very least, be an
+enjoyable read. </p>
+
+<h2>Languages I enjoy</h2>
+<h3>Python</h3>
+<p>I was a pretty late adopter of Python, all things considered. I learned a
+bit as a kid (around 2010 or so) but never really got into it. I regret passing
+it up immensely. I have found its biggest strength to be its incredible
+libraries. Web development? Flask or Django. Data Science? Scikit-learn, numpy,
+SciPy, and Pandas. Machine Learning? Tensorflow or PyTorch. Not only do its
+libraries cover a lot of very useful ground, but they're all really well
+structured. This site is a Flask application.</p>
+<p>If only we could finally get rid of Python 2.7. </p>
+<h3>Go</h3>
+<p>I find Golang to be very underrated. For a long time, people have
+acknowledged C++'s power and versatility, but lamented its incredibly difficult
+and overcomplicated nature. Golang, I find, is the best potential C++
+alternative. While it is garbage collected, it still manages to be extremely
+performant, to the point where it has found use on embedded systems. If the Go
+team can get the metaprogramming issues under control, I think Go can become
+a proper C++ replacement</p>
+<h3>C/C++</h3>
+<p>C is a dinosaur language, but it has survived so long for a reason. It
+gives you an incredibly low-level view of the system, and allows you to develop
+incredibly efficient software. I tend to use C for smaller projects, and bring
+in C++ if I believe Object-Oriented abstractions will be useful.
+<p>Of course, I have used many more languages than these, and you can check my
+resume for the full extent of my experience. However, for personal projects, I
+tend to stick to these.</p>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>{{ title }}</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<div id="header">
+<h1>Steven Kyle</h1>
+</div>
+<div id="sidebar">
+<ul>
+{% for link, address in links.items() %}
+<li><a href="{{ address }}">{{ link }}</a></li>
+{% endfor %}
+</ul>
+</div>
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+<footer>
+    <p>Opinions expressed on this website is my own unless otherwise specified. It
+    doesn't represent the views of any current, previous, or future employers
+    or associates.</p>
+</footer>
+</body>
+</html>

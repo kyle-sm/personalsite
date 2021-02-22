@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{% for post in posts %}
+<h2>{{ post.title }}</h2>
+<div id="postdate">Posted on {{ post.date }}</div>
+<div id="post_summary"><p>{{ post.content + '...' }}</p></div>
+<a href="{{ post.url }}">Read more</a>
+{% endfor %}
+{% endblock %}
